@@ -83,7 +83,7 @@ private fun AdjustmentBarSamplePreview() {
 }
 
 @Composable
-private fun AdjustmentBarSample() {
+internal fun AdjustmentBarSample() {
     val state = remember { AdjustmentBarSampleState() }
     val valueLabel = rememberValueLabel(state = state)
 

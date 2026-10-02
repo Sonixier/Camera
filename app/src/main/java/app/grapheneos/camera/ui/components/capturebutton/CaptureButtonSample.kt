@@ -56,7 +56,7 @@ private fun CaptureButtonSamplePreview() {
 }
 
 @Composable
-private fun CaptureButtonSample() {
+internal fun CaptureButtonSample() {
     val state = remember { CaptureButtonSampleState() }
 
     state.countdown.Effect(onFinished = state::finishCountdown)

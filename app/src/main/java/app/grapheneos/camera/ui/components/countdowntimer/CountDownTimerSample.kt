@@ -30,7 +30,7 @@ private fun CountDownTimerSamplePreview() {
 }
 
 @Composable
-private fun CountDownTimerSample() {
+internal fun CountDownTimerSample() {
     val state = remember { CountDownTimerSampleState() }
 
     state.countdown.Effect(onFinished = state::capture)
