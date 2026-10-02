@@ -129,9 +129,17 @@ android {
             resValue("string", "app_name", "Camera")
         }
 
+        create("composePrototype") {
+            initWith(getByName("release"))
+            applicationIdSuffix = ".compose"
+            signingConfig = signingConfigs.getByName("debug")
+            matchingFallbacks += listOf("release")
+            resValue("string", "app_name", "Camera Compose")
+        }
+
         getByName("debug") {
-            applicationIdSuffix = ".dev"
-            resValue("string", "app_name", "Camera d")
+            applicationIdSuffix = ".compose"
+            resValue("string", "app_name", "Camera Compose")
             // isDebuggable = false
         }
 
